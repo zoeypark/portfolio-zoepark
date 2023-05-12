@@ -7,6 +7,7 @@ const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 3rem;
   width: 100%;
 `
 const StyledDiv = styled.div`
