@@ -1,5 +1,0 @@
-const ModeButton = () => {
-  return (
-    <></>
-  )
-}
