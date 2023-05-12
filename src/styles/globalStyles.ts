@@ -63,6 +63,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
     font-size: calc( 10px + 0.4vw );
     vertical-align: baseline;
     font-family: 'PPNeueMontrealThin','QueensThinItalic','QueensThin','QueensMediumItalic','QueensMedium';
@@ -76,28 +77,31 @@ const GlobalStyle = createGlobalStyle`
   footer, header, hgroup, menu, nav, section {
     display: block;
   }
+
+  html {
+    min-height: 100vh;
+  }
+
   body {
+    min-height: 100vh;
+    margin: 0;
     line-height: 1;
     background-color: #EFEBE6;
-    overflow-y: overlay !important;
+    padding: 0 1.5rem;
   }
+  
   ol, ul {
     list-style: none;
   }
   blockquote, q {
     quotes: none;
   }
-  blockquote:before, blockquote:after,
-  q:before, q:after {
-    content: '';
-    content: none;
-  }
   table {
     border-collapse: collapse;
     border-spacing: 0;
   }
   body::-webkit-scrollbar {
-    width: 8px;
+    width: 0;
     background: transparent;
   }
   body::-webkit-scrollbar-thumb {

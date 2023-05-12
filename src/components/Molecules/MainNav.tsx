@@ -5,8 +5,10 @@ const MainNavWrap = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
-  > a {
+  > li {
+    > a {
     display: flex;
     > .hoverIcon {
       width: 1.5rem;
@@ -21,21 +23,28 @@ const MainNavWrap = styled.ul`
       }
     }
   }
+  }
 `
 
 const MainNav = () => {
   return (
     <>
       <MainNavWrap>
-        <NavLink to='/email'>
+        <li>        
+          <NavLink to='/aboutme'>
           <div>about me</div>
-        </NavLink>
-        <NavLink to='/project'>
-          <div>project</div>
-        </NavLink>
-        <NavLink to='/contact'>
-          <div>contact</div>
-        </NavLink>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='/project'>
+            <div>project</div>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='/contact'>
+            <div>contact</div>
+          </NavLink>
+        </li>
       </MainNavWrap>
     </>
   )
