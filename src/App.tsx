@@ -11,7 +11,7 @@ function App() {
   console.log(location);
   return (
     <ThemeProvider theme={theme}>
-      {window.location.pathname === '/' ? <MainHeader/> : <Header/>}
+      {window.location.pathname === '/' || window.location.pathname === '/contact' ? <MainHeader/> : <Header/>}
       {window.location.pathname === '/' ? <Main/> : ''}
       <GlobalStyle/>
     </ThemeProvider>
