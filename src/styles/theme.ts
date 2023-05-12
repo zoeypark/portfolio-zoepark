@@ -14,7 +14,7 @@ const colors = {
 	background: '#EFEBE6',
 };
 
-const fontWeight = {
+const fontWeigth = {
 	thin: 400,
 	base: 500,
 	bold: 600,
@@ -23,7 +23,7 @@ const fontWeight = {
 const theme = {
 	fontSizes,
 	colors,
-	fontWeight,
+	fontWeigth,
 	// common,
 };
 
