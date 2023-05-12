@@ -1,0 +1,5 @@
+const TranslationButton = () => {
+  return (
+    <></>
+  )
+}
