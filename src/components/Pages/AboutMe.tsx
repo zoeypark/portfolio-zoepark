@@ -1,8 +1,9 @@
-import { Header } from "../Molecules/Header";
+import AboutMeCardScroll from "../Organisms/AboutMeCardScroll";
 
 const AboutMe = () => {
   return (
     <>
+      <AboutMeCardScroll />
     </>
   )
 }

@@ -5,14 +5,18 @@ import styled from "styled-components";
 
 const HeaderWrapper = styled.div`
   display: flex;
+  position: sticky;
+  top: 0rem;
   justify-content: space-between;
   align-items: center;
   height: 3rem;
+  background-color: #EFEBE6;
   width: 100%;
 `
 const StyledDiv = styled.div`
   display: flex;
   gap: 3rem;
+  position: relative;
   > button {
     all: unset;
     cursor: pointer;
@@ -45,7 +49,7 @@ export const Header = () => {
         <Logo/>
         <StyledDiv>
           {/*TranslationButton은 main page 제외한 나머지 페이지의 헤더에 적용*/}
-          <TranslationButton/>          
+          <TranslationButton />         
           <ModeButton />
           <button>menu</button>
         </StyledDiv>
