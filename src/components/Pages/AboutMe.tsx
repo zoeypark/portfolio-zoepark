@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import AboutMeSideMenu from "../Molecules/AboutMeSideMenu";
+import {AboutMeSideMenu} from "../Molecules/AboutMeMenu";
 import AboutMeCardScroll from "../Organisms/AboutMeCardScroll";
 
 const Container = styled.div`
   display: flex;
   padding-top: 8rem;
-  position: relative;
 `
 
 const AboutMe = () => {
@@ -13,7 +12,6 @@ const AboutMe = () => {
     <>
       <Container>
         <AboutMeCardScroll />
-        <AboutMeSideMenu/>
       </Container>
     </>
   )
