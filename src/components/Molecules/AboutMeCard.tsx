@@ -23,11 +23,10 @@ const AboutMeCard = () => {
     <>
       <CardWrapper>
         <img src={TestImg} alt="desc"></img>
-        <div className="content">
-          <div className="title">about me</div>
-          <div className="desc">1996년생</div>
-          <div>도전, 끈기, 호기심! 현재 서울에 있습니다.</div>
-          <div>typescript를 공부 중입니다.</div>
+        <div className="contents">
+          <div className="title"></div>
+          <div className="desc"></div>
+          <div className="content"></div>
         </div>
       </CardWrapper>
     </>
