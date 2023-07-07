@@ -33,9 +33,6 @@ const AboutMeCardScroll = () => {
         <div>
           <ScrollWrapper>
             <ul>
-              {cards.map(()=>{
-
-              })}
               <li ref={sectionRefs.aboutme}>
                 <AboutMeCard />
               </li>
