@@ -40,27 +40,23 @@ const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Your EmailJS service ID, template ID, and user ID
     const serviceId:string = process.env.REACT_APP_EMAILJS_SERVICE_ID as string;
     const templateId:string = process.env.REACT_APP_EMAILJS_TEMPLATE_ID as string;
     const userId:string = process.env.REACT_APP_EMAILJS_USER_ID as string;
 
-    console.log(userId);
-    // Send the email
     emailjs.send(serviceId, templateId, {
       from_name: name,
       from_email: email,
       message: message,
     }, userId)
       .then(() => {
-        console.log('Email successfully sent!');
-        // Clear form fields
         setName('');
         setEmail('');
         setMessage('');
+        alert('Your message has been successfully sent. Please check your inbox.')
       })
       .catch((error) => {
-        console.error('Error sending email:', error);
+        alert('Oops, sorry! Your message has not been sent to Zoe due to an error. Please try again.')
       });
 
   };
